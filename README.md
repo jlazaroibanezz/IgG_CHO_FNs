@@ -11,7 +11,7 @@ The nutrient uptake rates were selected from Carinhas et al. 2013 and refer to t
 
 - Simulates various culture conditions and parameters.
 - Uses optimization algorithms to improve antibody production.
-- Outputs results for the best maximum monoclonal antibody yield depending on nutrient concentrations, dilution rates, nutrient uptake rates and growth rates.
+- Outputs results for the maximum monoclonal antibody yield depending on nutrient concentrations, dilution rates, nutrient uptake rates and growth rates.
 
 **How to use**: Simply run the script, and it will automatically simulate and return the optimized antibody flux depending on the previous parameters, among other interesting values.
 
@@ -23,8 +23,8 @@ $ python3 CHOBiorFN_all_aa_nutrients_HP_git.py
 
 This script contains four main functions:
 
-1. Limiting Metabolite Discovery (genCHOBiorFNmax and genCHOBiorFNmin): Identify the metabolite that is limiting in the cell culture for the growth and antibody production.
-2. Culture Medium Minimization (MinimizeMediumim and EcoMinimizeMediumim): MinimizeMediumim implements a minimization algorithm to reduce the number of components in the culture medium while maintaining or improving productivity while EcoMinimizeMediumim does the same incorporating a ponderated sum depending on the price of each nutrient in the market.
+1. Limiting Metabolite Discovery (genCHOBiorFNmax and genCHOBiorFNmin): Identify the metabolite that limits the growth and antibody production in the cell culture.
+2. Culture Medium Minimization (MinimizeMediumim and EcoMinimizeMediumim): MinimizeMediumim implements a minimization algorithm to reduce the number of components in the culture medium while maintaining antibody productivity while EcoMinimizeMediumim minimizes an economically ponderated sum of the nutrient concentrations based on the price of each nutrient in the market.
 
 ### Key Features:
 
