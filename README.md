@@ -23,8 +23,8 @@ $ python3 CHOBiorFN_all_aa_nutrients_HP_git.py
 
 This script contains four main functions:
 
-    Limiting Metabolite Discovery (genCHOBiorFNmax and genCHOBiorFNmin): Identify the metabolite that is limiting in the cell culture for the growth and antibody production.
-    Culture Medium Minimization (MinimizeMediumim and EcoMinimizeMediumim): MinimizeMediumim implements a minimization algorithm to reduce the number of components in the culture medium while maintaining or improving productivity while EcoMinimizeMediumim does the same incorporating a ponderated sum depending on the price of each nutrient in the market.
+1. Limiting Metabolite Discovery (genCHOBiorFNmax and genCHOBiorFNmin): Identify the metabolite that is limiting in the cell culture for the growth and antibody production.
+2. Culture Medium Minimization (MinimizeMediumim and EcoMinimizeMediumim): MinimizeMediumim implements a minimization algorithm to reduce the number of components in the culture medium while maintaining or improving productivity while EcoMinimizeMediumim does the same incorporating a ponderated sum depending on the price of each nutrient in the market.
 
 ### Key Features:
 
