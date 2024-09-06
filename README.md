@@ -32,7 +32,7 @@ This script contains four main functions:
 - Minimizes the culture medium formulation without sacrificing productivity.
 - Outputs the optimal medium composition and the limiting metabolites that need attention for enhanced productivity.
 
-How to use: This script is automatically called by CHOBiorFN_all_aa_nutrients_HP_git.py 
+**How to use**: This script is automatically called by CHOBiorFN_all_aa_nutrients_HP_git.py 
 
 ### Requirements
 
