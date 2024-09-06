@@ -33,3 +33,11 @@ This script contains four main functions:
 - Outputs the optimal medium composition and the limiting metabolites that need attention for enhanced productivity.
 
 How to use: This script is automatically called by CHOBiorFN_all_aa_nutrients_HP_git.py 
+
+### Requirements
+
+Both scripts require the following Python libraries:
+
+- numpy
+- cobra
+- pandas
