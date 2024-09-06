@@ -19,7 +19,7 @@ The nutrient uptake rates were selected from Carinhas et al. 2013 and refer to t
 $ python3 CHOBiorFN_all_aa_nutrients_HP_git.py
 ```
 
-## 2. nutrients_HP_git.py
+### 2. `nutrients_HP_git.py`
 
 This script contains four main functions:
 
