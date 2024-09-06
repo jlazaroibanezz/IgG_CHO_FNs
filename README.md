@@ -10,5 +10,5 @@ The nutrient uptake rates were selected from Carinhas et al. 2013 and refer to t
 ### Key Features:
 
 - Simulates various culture conditions and parameters.
-    - Uses optimization algorithms to improve antibody production.
-    - Outputs results for the best culture conditions, including nutrient concentrations, dilution rates and growth rates.
+- Uses optimization algorithms to improve antibody production.
+- Outputs results for the best culture conditions, including nutrient concentrations, dilution rates and growth rates.
