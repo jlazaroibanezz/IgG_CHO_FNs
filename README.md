@@ -14,3 +14,7 @@ The nutrient uptake rates were selected from Carinhas et al. 2013 and refer to t
 - Outputs results for the best maximum monoclonal antibody yield depending on nutrient concentrations, dilution rates, nutrient uptake rates and growth rates.
 
 **How to use**: Simply run the script, and it will automatically simulate and return the optimized antibody flux depending on the previous parameters, among other interesting values.
+
+```
+$ python3 CHOBiorFN_all_aa_nutrients_HP_git.py
+```
