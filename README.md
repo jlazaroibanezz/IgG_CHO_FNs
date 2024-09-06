@@ -41,3 +41,6 @@ Both scripts require the following Python libraries:
 - numpy
 - cobra
 - pandas
+
+and the previous installation of a a solver that will solve the linear programming problem. We suggest GLPK, Gurobi or
+CPLEX. In our case, we used [CPLEX](https://www.ibm.com/es-es/products/ilog-cplex-optimization-studio).
