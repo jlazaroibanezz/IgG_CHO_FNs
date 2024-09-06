@@ -18,3 +18,18 @@ The nutrient uptake rates were selected from Carinhas et al. 2013 and refer to t
 ```
 $ python3 CHOBiorFN_all_aa_nutrients_HP_git.py
 ```
+
+## 2. nutrients_HP_git.py
+
+This script contains four main functions:
+
+    Limiting Metabolite Discovery (genCHOBiorFNmax and genCHOBiorFNmin): Identify the metabolite that is limiting in the cell culture for the growth and antibody production.
+    Culture Medium Minimization (MinimizeMediumim and EcoMinimizeMediumim): MinimizeMediumim implements a minimization algorithm to reduce the number of components in the culture medium while maintaining or improving productivity while EcoMinimizeMediumim does the same incorporating a ponderated sum depending on the price of each nutrient in the market.
+
+### Key Features:
+
+- Analyzes cell culture data to identify limiting metabolites.
+- Minimizes the culture medium formulation without sacrificing productivity.
+- Outputs the optimal medium composition and the limiting metabolites that need attention for enhanced productivity.
+
+How to use: This script is automatically called by CHOBiorFN_all_aa_nutrients_HP_git.py 
