@@ -16,7 +16,7 @@ The nutrient uptake rates were selected from Carinhas et al. 2013 and refer to t
 **How to use**: Simply run the script, and it will automatically simulate and return the optimized antibody flux depending on the previous parameters, among other interesting values.
 
 ```
-$ python3 CHOBiorFN_all_aa_nutrients_HP_git.py
+$ python3 CHOBiorFN_all_aa_nutrients_HP.py
 ```
 
 ### 2. `nutrients_HP.py`
@@ -32,7 +32,7 @@ This script contains four main functions:
 - Minimizes the culture medium formulation without sacrificing productivity.
 - Outputs the optimal medium composition and the limiting metabolites that need attention for enhanced productivity.
 
-**How to use**: This script is automatically called by CHOBiorFN_all_aa_nutrients_HP_git.py 
+**How to use**: This script is automatically called by CHOBiorFN_all_aa_nutrients_HP.py 
 
 ### Requirements
 
