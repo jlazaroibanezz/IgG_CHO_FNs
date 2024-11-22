@@ -13,7 +13,7 @@ import os
 import pandas as pd
 from pandas_ods_reader import read_ods
 from cobra import Metabolite, Reaction, Gene
-from nutrients_HP_git import genCHOBiorFNmax, genCHOBiorFNmin, MinimizeMediumim, EcoMinimizeMediumim
+from nutrients_HP import genCHOBiorFNmax, genCHOBiorFNmin, MinimizeMediumim, EcoMinimizeMediumim
 
 # Constants
 glucose_mmass = 180.1577 # Glucose molar mass (g/mol)
@@ -232,7 +232,7 @@ def loadCHOmodel(filename = "iCHOv1", name = "CHOFN", solver = "gurobi"):
     
     """
     
-    antibody = read_ods("added_ab_reactions (3)dup.ods") # Antibody reaction
+    antibody = read_ods("added_ab_reactions.ods") # Antibody reaction
     model_name = "iCHOv1.xml"
 
 
