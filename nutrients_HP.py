@@ -28,7 +28,7 @@ def loadCHOmodel(filename = "iCHOv1", name = "CHOFN", solver = "gurobi"):
     
     """
     
-    antibody = read_ods("added_ab_reactions (3)dup.ods") # Antibody reaction
+    antibody = read_ods("added_ab_reactions.ods") # Antibody reaction
     model_name = "iCHOv1.xml"
 
 
