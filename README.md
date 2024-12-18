@@ -1,6 +1,6 @@
 # IgG_CHO_FNs
 
-This repository contains the code utilized to run the simulations performed in the paper "Flexible Nets to optimize antibody production in Chinese Hamster Ovary cells" submitted to Computational and Structural Biotechnology Journal.
+This repository contains the code utilized to run the simulations performed in the paper "Multi-Scale Design and Optimization of Antibody Production via Flexible Nets" submitted to Computational and Structural Biotechnology Journal.
 
 ### 1. `CHOBiorFN_all_aa_nutrients_HP.py`
 
@@ -41,6 +41,8 @@ Both scripts require the following Python libraries:
 - numpy
 - cobra
 - pandas
+- fnyzer
+- pandas_ods_reader
 
 and the previous installation of a a solver that will solve the linear programming problem. We suggest GLPK, Gurobi or
 CPLEX. In our case, we used [CPLEX](https://www.ibm.com/es-es/products/ilog-cplex-optimization-studio).
