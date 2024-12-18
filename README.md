@@ -44,5 +44,5 @@ Both scripts require the following Python libraries:
 - fnyzer
 - pandas_ods_reader
 
-and the previous installation of a a solver that will solve the linear programming problem. We suggest GLPK, Gurobi or
+and the previous installation of a a solver that will solve the linear programming problem. We suggest [GLPK](https://www.gnu.org/software/glpk/), [Gurobi](https://www.gurobi.com/) or
 CPLEX. In our case, we used [CPLEX](https://www.ibm.com/es-es/products/ilog-cplex-optimization-studio).
