@@ -1,48 +1,69 @@
-# IgG_CHO_FNs
+# Genome-Scale Metabolic Model Simulations for CHO Cells
 
-This repository contains the code utilized to run the simulations performed in the paper "Multi-Scale Design and Optimization of Antibody Production via Flexible Nets" submitted to Computational and Structural Biotechnology Journal.
+This repository provides Python scripts to work with the genome-scale metabolic model `iCHOv1`, simulating antibody production in Chinese Hamster Ovary (CHO) cells. The main objective is to optimize antibody productivity and evaluate nutrient consumption under bioreactor conditions as well as minimizing medium requirements.
 
-### 1. `CHOBiorFN_all_aa_nutrients_HP.py`
+## Repository Contents
 
-This script performs simulations to optimize antibody production in CHO cells. It models the cell culture conditions and tests different parameters to improve productivity. The simulation evaluates factors such as nutrient concentrations, nutrient uptake rates, dilution rates and growth rates to find the optimal conditions that maximize antibody yield.
-The nutrient uptake rates were selected from Carinhas et al. 2013 and refer to the HP dataset mentioned in the paper.
+### **1. `CHOBiorFN_all_aa_nutrients_HP_pru1_def.py`**
+- **Purpose**: Core script for simulating antibody production in CHO cells using the `iCHOv1` model.
+- **Features**:
+  - Defines and initializes bioreactor parameters (e.g., dilution rate, biomass concentration).
+  - Adds antibody production reactions to the model using data from `added_ab_reactions.ods`.
+  - Optimizes metabolic fluxes for antibody production.
+  - Generates a flexible net representation (`fnet`) for simulation.
+- **Key Functions**:
+  - `loadCHOmodel`: Loads the metabolic model and incorporates antibody reactions.
+  - `comProductivity`: Simulates antibody production and calculates maximum productivity.
 
-### Key Features:
+### **2. `CHOBiorFN_all_aa_nutrients_HP_pru1_def_medium.py`**
+- **Purpose**: Optimizes the nutrient medium composition for cost-effectiveness.
+- **Features**:
+  - Computes minimal nutrient uptake rates required for a given antibody production level.
+  - Adds pricing constraints to simulate cost minimization for nutrient supply.
+  - Incorporates bioreactor dynamics, including glucose and amino acid uptake.
+- **Key Functions**:
+  - `EcoMinimizeMediumim`: Optimizes the medium composition while maintaining steady-state conditions for antibody production.
 
-- Simulates various culture conditions and parameters.
-- Uses optimization algorithms to improve antibody production.
-- Outputs results for the maximum monoclonal antibody yield depending on nutrient concentrations, dilution rates, nutrient uptake rates and growth rates.
+### **3. `added_ab_reactions.ods`**
+- **Purpose**: Provides stoichiometric coefficients for antibody production reactions.
+- **Features**:
+  - Contains details of reactions and their associated metabolites for antibodies like IgG.
+  - Used by `loadCHOmodel` to incorporate antibody synthesis into the metabolic model.
 
-**How to use**: Simply run the script, and it will automatically simulate and return the optimized antibody flux depending on the previous parameters, among other interesting values.
+## Workflow
 
-```
-$ python3 CHOBiorFN_all_aa_nutrients_HP.py
-```
+1. **Prepare the Environment**:
+   - Ensure all dependencies are installed:
+     ```bash
+     pip install numpy cobra pandas matplotlib pandas-ods-reader
+     ```
 
-### 2. `nutrients_HP.py`
+2. **Load and Modify the Model**:
+   - Use `CHOBiorFN_all_aa_nutrients_HP_pru1_def.py` to load the `iCHOv1` model, add antibody reactions, and simulate productivity.
+   - Example:
+     ```bash
+     python3 CHOBiorFN_all_aa_nutrients_HP_pru1_def.py -D 0.0166 -X_ini 3.18 -X_fin 3.18 -data HP
+     ```
 
-This script contains four main functions:
+3. **Optimize the Medium**:
+   - Use `CHOBiorFN_all_aa_nutrients_HP_pru1_def_medium.py` to minimize the cost of nutrients required for antibody production.
+   - Example:
+     ```bash
+     python3 CHOBiorFN_all_aa_nutrients_HP_pru1_def_medium.py
+     ```
 
-1. Limiting Metabolite Discovery (genCHOBiorFNmax and genCHOBiorFNmin): Identify the metabolite that limits the growth and antibody production in the cell culture.
-2. Culture Medium Minimization (MinimizeMediumim and EcoMinimizeMediumim): MinimizeMediumim implements a minimization algorithm to reduce the number of components in the culture medium while maintaining antibody productivity while EcoMinimizeMediumim minimizes an economically ponderated sum of the nutrient concentrations based on the price of each nutrient in the market.
+4. **Analyze Results**:
+   - The scripts output:
+     - Nutrient uptake rates for optimal productivity.
+     - Cost minimization results for medium composition.
+     - Antibody production rates under bioreactor conditions.
 
-### Key Features:
+## Key Parameters
 
-- Analyzes cell culture data to identify limiting metabolites.
-- Minimizes the culture medium formulation without sacrificing productivity.
-- Outputs the optimal medium composition and the limiting metabolites that need attention for enhanced productivity.
+- **Dilution Rate (`D`)**: The rate at which the medium is replaced in the bioreactor.
+- **Biomass Concentration (`X_ini`, `X_fin`)**: Initial and final biomass concentrations in the reactor.
+- **Nutrient Constraints**: Maximum uptake rates for glucose and amino acids.
 
-**How to use**: This script is automatically called by CHOBiorFN_all_aa_nutrients_HP.py 
+## Solvers
 
-### Requirements
-
-Both scripts require the following Python libraries:
-
-- numpy
-- cobra
-- pandas
-- fnyzer
-- pandas_ods_reader
-
-and the previous installation of a a solver that will solve the linear programming problem. We suggest [GLPK](https://www.gnu.org/software/glpk/), [Gurobi](https://www.gurobi.com/) or
-CPLEX. In our case, we used [CPLEX](https://www.ibm.com/es-es/products/ilog-cplex-optimization-studio).
+Before running the simulations is essential to have installed a linear programming solver. In this work we used [CPLEX](https://www.ibm.com/es-es/products/ilog-cplex-optimization-studio), but others such as [GLPK](https://www.gnu.org/software/glpk/) and [Gurobi](https://www.gurobi.com/) are good options.
