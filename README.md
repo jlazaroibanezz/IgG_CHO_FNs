@@ -62,4 +62,4 @@ This repository provides Python scripts to work with the genome-scale metabolic 
 
 ## Solvers
 
-Before running the simulations is essential to have installed a linear programming solver. In this work we used [CPLEX](https://www.ibm.com/es-es/products/ilog-cplex-optimization-studio), but others such as [GLPK](https://www.gnu.org/software/glpk/) and [Gurobi](https://www.gurobi.com/) are good options.
+Before running the simulations, it is essential to have installed a linear programming solver. In this work we used [CPLEX](https://www.ibm.com/es-es/products/ilog-cplex-optimization-studio), but others such as [GLPK](https://www.gnu.org/software/glpk/) and [Gurobi](https://www.gurobi.com/) are good options.
