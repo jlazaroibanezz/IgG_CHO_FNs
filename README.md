@@ -47,10 +47,6 @@ This repository provides Python scripts to work with the genome-scale metabolic 
 
 3. **Optimize the Medium**:
    - Use `CHOBiorFN_all_aa_nutrients_HP_pru1_def_medium.py` to minimize the cost of nutrients required for antibody production.
-   - Example:
-     ```bash
-     python3 CHOBiorFN_all_aa_nutrients_HP_pru1_def_medium.py
-     ```
 
 4. **Analyze Results**:
    - The scripts output:
