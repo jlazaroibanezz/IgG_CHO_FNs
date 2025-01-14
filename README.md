@@ -34,9 +34,9 @@ The main objective is to optimize antibody productivity and evaluate nutrient co
 ## Workflow
 
 1. **Prepare the Environment**:
-   - Ensure all dependencies are installed:
+   - Ensure all requisites are installed:
      ```bash
-     pip install numpy cobra pandas matplotlib pandas-ods-reader
+     pip install numpy cobra pandas matplotlib pandas-ods-reader fnyzer
      ```
 
 2. **Load and Modify the Model**:
@@ -63,4 +63,4 @@ The main objective is to optimize antibody productivity and evaluate nutrient co
 
 ## Solvers
 
-Before running the simulations, it is essential to have installed a linear programming solver. In this work we used [CPLEX](https://www.ibm.com/es-es/products/ilog-cplex-optimization-studio), but others such as [GLPK](https://www.gnu.org/software/glpk/) and [Gurobi](https://www.gurobi.com/) are good options.
+Before running the simulations, it is essential to have installed a linear programming solver. In this work we used [CPLEX](https://www.ibm.com/es-es/products/ilog-cplex-optimization-studio), but others such as [GLPK](https://www.gnu.org/software/glpk/) and [Gurobi](https://www.gurobi.com/) are supported as well.
