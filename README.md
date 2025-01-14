@@ -64,3 +64,10 @@ The main objective is to optimize antibody productivity and evaluate nutrient co
 ## Solvers
 
 Before running the simulations, it is essential to have installed a linear programming solver. In this work we used [CPLEX](https://www.ibm.com/es-es/products/ilog-cplex-optimization-studio), but others such as [GLPK](https://www.gnu.org/software/glpk/) and [Gurobi](https://www.gurobi.com/) are supported as well.
+
+To easily install GLPK:
+
+```bash
+     sudo apt-get install python-glpk
+     sudo apt-get install glpk-utils
+     ```
