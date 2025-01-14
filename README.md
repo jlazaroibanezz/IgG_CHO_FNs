@@ -45,6 +45,11 @@ The main objective is to optimize antibody productivity and evaluate nutrient co
      ```bash
      python3 CHOBiorFN.py -D 0.0166 -X_ini 3.18 -X_fin 3.18 -data HP
      ```
+The output of the previous command is: 
+
+```plaintext
+Growth with Xf in [ 3.18 ] gdcw L-1:
+Solution: 0.000193893859504033 mM h-1
 
 3. **Optimize the Medium**:
    - Use `CHOBiorFN_medium.py` to minimize the cost of nutrients required for antibody production.
