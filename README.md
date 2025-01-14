@@ -52,7 +52,37 @@ Growth with Xf in [ 3.18 ] gdcw L-1:
 Solution: 0.000193893859504033 mM h-1
 ```
 3. **Optimize the Medium**:
-   - Use `CHOBiorFN_medium.py` to minimize the cost of nutrients required for antibody production.
+   - Use `CHOBiorFN_medium.py` to minimize the cost of nutrients required for antibody production. This file calls the `fnet` and the `solution` generated in `CHOBiorFN.py`.  
+    For example:
+     ```bash
+     python3 CHOBiorFN_medium.py -D 0.0166 -X_ini 3.18 -X_fin 3.18 -data HP
+     ```
+The output:
+
+```plaintext
+  Growth with Xf in [ 3.18 ] gdcw L-1:
+Solution: 0.00019437140052697954 mM h-1
+Glc enters in tank:  0.0 mM
+Gln enters in tank:  0.0 mM
+Phe enters in tank:  1.0886563063147414 mM
+Arg enters in tank:  0.0 mM
+Asn enters in tank:  0.0 mM
+Asp enters in tank:  0.0 mM
+Cys enters in tank:  0.1036911952606244 mM
+His enters in tank:  0.6104054824818267 mM
+Ile enters in tank:  1.0280009510960368 mM
+Leu enters in tank:  2.41261082456068 mM
+Lys enters in tank:  2.3801969189893972 mM
+Met enters in tank:  1.0114698795180723 mM
+Pro enters in tank:  0.0 mM
+Ser enters in tank:  0.0 mM
+Thr enters in tank:  2.1000826580840815 mM
+Trp enters in tank:  0.38448718431654705 mM
+Tyr enters in tank:  1.1168313253012048 mM
+Val enters in tank:  2.40762597830282 mM
+Glu enters in tank:  0.0 mM
+The weighted sum for the economic minimization of the medium is  0.3658048656376197
+```
 
 4. **Analyze Results**:
    - The scripts output:
