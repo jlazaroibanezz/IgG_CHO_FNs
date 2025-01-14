@@ -5,7 +5,7 @@ The main objective is to optimize antibody productivity and evaluate nutrient co
 
 ## Repository Contents
 
-### **1. `CHOBiorFN_all_aa_nutrients_HP_pru1_def.py`**
+### **1. `CHOBiorFN.py`**
 - **Purpose**: Core script for simulating antibody production in CHO cells using the `iCHOv1` model.
 - **Features**:
   - Defines and initializes bioreactor parameters (e.g., dilution rate, biomass concentration).
@@ -16,7 +16,7 @@ The main objective is to optimize antibody productivity and evaluate nutrient co
   - `loadCHOmodel`: Loads the metabolic model and incorporates antibody reactions.
   - `comProductivity`: Simulates antibody production and calculates maximum productivity.
 
-### **2. `CHOBiorFN_all_aa_nutrients_HP_pru1_def_medium.py`**
+### **2. `CHOBiorFN_medium.py`**
 - **Purpose**: Optimizes the nutrient medium composition for cost-effectiveness.
 - **Features**:
   - Computes minimal nutrient uptake rates required for a given antibody production level.
@@ -40,14 +40,14 @@ The main objective is to optimize antibody productivity and evaluate nutrient co
      ```
 
 2. **Load and Modify the Model**:
-   - Use `CHOBiorFN_all_aa_nutrients_HP_pru1_def.py` to load the `iCHOv1` model, add antibody reactions, and simulate productivity.
+   - Use `CHOBiorFN.py` to load the `iCHOv1` model, add antibody reactions, and simulate productivity.
    - Example:
      ```bash
-     python3 CHOBiorFN_all_aa_nutrients_HP_pru1_def.py -D 0.0166 -X_ini 3.18 -X_fin 3.18 -data HP
+     python3 CHOBiorFN.py -D 0.0166 -X_ini 3.18 -X_fin 3.18 -data HP
      ```
 
 3. **Optimize the Medium**:
-   - Use `CHOBiorFN_all_aa_nutrients_HP_pru1_def_medium.py` to minimize the cost of nutrients required for antibody production.
+   - Use `CHOBiorFN_medium.py` to minimize the cost of nutrients required for antibody production.
 
 4. **Analyze Results**:
    - The scripts output:
