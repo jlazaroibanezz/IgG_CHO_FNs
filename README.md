@@ -1,6 +1,6 @@
 # Genome-Scale Metabolic Model Simulations for CHO Cells
 
-This repository provides Python scripts to work with the genome-scale metabolic model `iCHOv1`, simulating antibody production in Chinese Hamster Ovary (CHO) cells. The iCHOv1 model is a genome-scale metabolic model of Chinese hamster ovary (CHO) cells, widely used for therapeutic protein production. It includes 1766 genes, 6663 reactions, and 4456 metabolites, covering key pathways like glycolysis, TCA cycle, and amino acid biosynthesis. The model supports optimizing antibody production, analyzing metabolic fluxes, and improving bioprocess conditions.
+This repository provides Python scripts to work with the genome-scale metabolic model `iCHOv1`, simulating antibody production in Chinese Hamster Ovary (CHO) cells. The [iCHOv1](http://bigg.ucsd.edu/models/iCHOv1) model is a genome-scale metabolic model of Chinese hamster ovary (CHO) cells, widely used for therapeutic protein production. It includes 1766 genes, 6663 reactions, and 4456 metabolites, covering key pathways like glycolysis, TCA cycle, and amino acid biosynthesis. The model supports optimizing antibody production, analyzing metabolic fluxes, and improving bioprocess conditions.
 The main objective is to optimize antibody productivity and evaluate nutrient consumption under bioreactor conditions as well as minimizing medium requirements.
 
 ## Repository Contents
