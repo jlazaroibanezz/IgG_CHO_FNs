@@ -70,4 +70,4 @@ To easily install GLPK:
 ```bash
      sudo apt-get install python-glpk
      sudo apt-get install glpk-utils
-     ```
+```
