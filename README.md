@@ -99,11 +99,4 @@ The weighted sum for the economic minimization of the medium is  0.3657034631594
 
 ## Solvers
 
-Before running the simulations, it is essential to have installed a linear programming solver. In this work we used [CPLEX](https://www.ibm.com/es-es/products/ilog-cplex-optimization-studio), but others such as [GLPK](https://www.gnu.org/software/glpk/) and [Gurobi](https://www.gurobi.com/) are supported as well.
-
-To easily install GLPK:
-
-```bash
-     sudo apt-get install python-glpk
-     sudo apt-get install glpk-utils
-```
+Before running the simulations, it is essential to have installed a linear programming solver. In this work we used [CPLEX](https://www.ibm.com/es-es/products/ilog-cplex-optimization-studio), but others such as [Gurobi](https://www.gurobi.com/) are supported, as well, obtaining the same solution.
