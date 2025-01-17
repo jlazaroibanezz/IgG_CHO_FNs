@@ -55,7 +55,7 @@ Solution: 0.00019389385950403315 mM h-1
    - Use `CHOBiorFN_medium.py` to minimize the cost of nutrients required for antibody production. This file calls the `fnet` and the `solution` generated in `CHOBiorFN.py`.  
     For example:
      ```bash
-     python3 CHOBiorFN_medium.py -D 0.0166 -X_ini 3.18 -X_fin 3.18 -data HP
+     python3 CHOBiorFN_medium.py
      ```
 The output:
 
