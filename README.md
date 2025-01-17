@@ -60,28 +60,29 @@ Solution: 0.00019437140052697954 mM h-1
 The output:
 
 ```plaintext
-  Growth with Xf in [ 3.18 ] gdcw L-1:
-Solution: 0.00019437140052697954 mM h-1
+Growth with Xf in [ 3.19 ] gdcw L-1:
+Solution: 0.00019389385950403315 mM h-1
 Glc enters in tank:  0.0 mM
 Gln enters in tank:  0.0 mM
-Phe enters in tank:  1.0886563063147414 mM
+Phe enters in tank:  1.0854803393544883 mM
 Arg enters in tank:  0.0 mM
 Asn enters in tank:  0.0 mM
 Asp enters in tank:  0.0 mM
-Cys enters in tank:  0.1036911952606244 mM
-His enters in tank:  0.6104054824818267 mM
-Ile enters in tank:  1.0280009510960368 mM
-Leu enters in tank:  2.41261082456068 mM
-Lys enters in tank:  2.3801969189893972 mM
-Met enters in tank:  1.0114698795180723 mM
+Cys enters in tank:  0.6385813272335126 mM
+His enters in tank:  0.6103572827466555 mM
+Ile enters in tank:  1.0287967078517914 mM
+Leu enters in tank:  2.413129328082505 mM
+Lys enters in tank:  2.3801969190054995 mM
+Met enters in tank:  0.47668609675330026 mM
 Pro enters in tank:  0.0 mM
 Ser enters in tank:  0.0 mM
-Thr enters in tank:  2.1000826580840815 mM
-Trp enters in tank:  0.38448718431654705 mM
-Tyr enters in tank:  1.1168313253012048 mM
-Val enters in tank:  2.40762597830282 mM
+Thr enters in tank:  2.098775472431118 mM
+Trp enters in tank:  0.38392230458869714 mM
+Tyr enters in tank:  1.1193855421686756 mM
+Val enters in tank:  2.4065777786456595 mM
 Glu enters in tank:  0.0 mM
-The weighted sum for the economic minimization of the medium is  0.3658048656376197
+The weighted sum for the economic minimization of the medium is  0.365703463159436
+
 ```
 
 4. **Analyze Results**:
