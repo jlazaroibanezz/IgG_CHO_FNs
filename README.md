@@ -43,7 +43,7 @@ The main objective is to optimize antibody productivity and evaluate nutrient co
    - Use `CHOBiorFN.py` to load the `iCHOv1` model, add antibody reactions, and simulate productivity.
    - Example:
      ```bash
-     python3 CHOBiorFN.py -D 0.0166 -X_ini 3.18 -X_fin 3.18 -data HP
+     python3 CHOBiorFN.py
      ```
 The output of the previous command is: 
 
