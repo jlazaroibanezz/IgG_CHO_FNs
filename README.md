@@ -96,6 +96,7 @@ The weighted sum for the economic minimization of the medium is  0.3657034631594
 - **Dilution Rate (`D`)**: The rate at which the medium is replaced in the bioreactor.
 - **Biomass Concentration (`X_ini`, `X_fin`)**: Initial and final biomass concentrations in the reactor.
 - **Dataset (`data`)**: It can take two values (HP or Late_Exp). If you want to use the dataset that contains the maximum uptake rates for glucose and amino acids in the HP experiment from [1](https://analyticalsciencejournals.onlinelibrary.wiley.com/doi/10.1002/bit.24983), use `HP`. If you want to reproduce the results from the Late Exponential Phase experiment in [2](https://analyticalsciencejournals.onlinelibrary.wiley.com/doi/10.1002/bit.24445), use `Late_Exp`.
+- **Solver (`solver`)**: Specifies the utilized solver for the linear programming problem resolution (`cplex` is the default solver but `gurobi` is also supported). 
 
 ## Solvers
 
