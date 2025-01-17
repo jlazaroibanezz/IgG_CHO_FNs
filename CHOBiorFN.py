@@ -24,9 +24,8 @@ def_dilution_rt = 0.0166
 def_biomass_ini = 3.18727272727273 
 def_biomass_fin = 3.18727272727273 
 def_dataset = 'HP'
+def_solver = 'cplex_direct'
 
-# Solver
-solver = 'cplex_direct' # glpk
 
 # Parse parameters
 parser = argparse.ArgumentParser()
@@ -34,12 +33,14 @@ parser.add_argument("-D", "--dilution_rate", default=def_dilution_rt, help="Dilu
 parser.add_argument("-X_ini", "--biomass_ini", default=def_biomass_ini, help="Biomass initial (gdcw L-1)")
 parser.add_argument("-X_fin", "--biomass_fin", default=def_biomass_fin, help="Biomass final (gdcw L-1)")
 parser.add_argument("-data", "--dataset", default=def_dataset, help="Dataset used")
+parser.add_argument("-solver", "--solver", default=def_solver, help="Solver used")
 args = parser.parse_args()
 
 D = float(args.dilution_rate)
 X0 = float(args.biomass_ini)
 Xf = float(args.biomass_fin)
 data = args.dataset
+solver = args.solver
 
 
 if data == 'HP':
@@ -81,6 +82,13 @@ elif data == 'Late_Exp':
     lim_exch_pro = 0.00536*1.1 
     lim_exch_asp = 0.0035*1.1 
     lim_exch_cys = 0.00227*1.1 
+    
+if solver == 'cplex_direct':
+    solver = 'cplex_direct'
+    
+elif solver == 'gurobi':
+    solver = 'gurobi'
+
 
 
 def comProductivity(fnet, abmw, c, glcmM, gln, phe, arg, asn, asp, cys, his, ile, leu, lys, met, pro, ser, thr, trp, tyr, val, glu, D, X0, Xf):
