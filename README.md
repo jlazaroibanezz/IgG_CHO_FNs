@@ -39,7 +39,7 @@ The main objective is to optimize antibody productivity and evaluate nutrient co
      pip install numpy cobra pandas matplotlib pandas-ods-reader fnyzer
      ```
 
-2. **Load and Modify the Model**:
+2. **Load and Execute the Model**:
    - Use `CHOBiorFN.py` to load the `iCHOv1` model, add antibody reactions, and simulate productivity.
    - Example:
      ```bash
